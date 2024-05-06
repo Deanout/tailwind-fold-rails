@@ -102,4 +102,10 @@ describe('className Regex Tests', () => {
     expect(input.match(regex)).not.toBeNull();
   });
 
+  
+  test('Maches form_class attribute', () => {
+    const input = "<%= button_to 'Add to Cart', line_items_path(product_id: product), form_class: 'inline' %>";
+    expect(input.match(regex)).not.toBeNull();
+  })
+
 });
