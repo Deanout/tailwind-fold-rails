@@ -11,8 +11,8 @@ export class Decorator {
     unfoldIfLineSelected: boolean = false
     supportedLanguages: string[] = []
 
-    // Matches class="..." or className="..." or class: "..." or className: "..."
-    public regEx = /(class|className)(=|:|:\s)(['"`]|{(['"`]))(.*?)(\3|\4})/g
+    // Matches class="..." or className="..." or class: "..." or className: "..." or form_class: "..."
+    public regEx = /(class|className|form_class)(=|:|:\s)(['"`]|{(['"`]))(.*?)(\3|\4})/g
 
     regExGroup = 0
 
